@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BINARI CALCULATOR</title>
+	<style type="text/css">
+		#main{
+         width: 60%;
+         background-color: #c2d6d6;
+         padding: 10px;
+		}
+        #screen{
+         background-color :lightgray;
+        	 border :solid;
+        	 height : 120px; 
+        	 font-size : 60px;
+        	 margin: 6px;
+        	 border-radius: 16px;
+        }
+
+        #btn0,#btn1,#btndiv,#btnadd,#btnsub,#btnmul{
+        	width: 24%;
+        	font-size: 40px;
+        	padding-right: 4px;
+        	margin-right: 1px;
+        	background-color: lightgreen ;
+        	border-radius: 16px;
+        }
+        #btnequal,#btnC{
+        	width: 24%;
+        	font-size: 40px;
+        	background-color: darkgreen ;
+        	border-radius: 16px;
+        }
+	</style>
+
+</head>
+<body>
+	<br>   <br>
+   <div id='main'>
+   	 <center><h1>BINARY CALCULATOR</h1></center>
+   	 <div id='screen'>
+    	
+    </div>
+    	
+    <div>
+    	<button id="btn0">0</button>
+    	<button id="btn1">1</button>
+    	<button id="btnC">C</button>
+    	<button id="btnequal">=</button>
+
+    </div>
+    <div id='keys'>
+    	<button id="btnadd">+</button>
+    	<button id="btnsub">-</button>
+    	<button id="btnmul">*</button>
+    	<button id="btndiv">/</button>	
+    </div>
+   </div>
+  
+<script src="jquery.js"></script>
+<script  type="text/javascript">
+//CONVERTOR
+function changeBase(number, fromBase, toBase) {
+                        if (fromBase == 10)
+                            return (parseInt(number)).toString(toBase)
+                        else if (toBase == 10)
+                            return parseInt(number, fromBase);
+                        else{
+                            var numberInDecimal = parseInt(number, fromBase);
+                            return (parseInt(numberInDecimal)).toString(toBase);
+                    }
+}
+
+
+
+
+	var value='';
+	var oprator='';
+	var check=true;
+$(document).ready(function(){
+	if ( $("#btn1").click() ){
+			 $("#btn1").click(function(){
+	 	    	value+='1';
+				$("#screen").html(value);
+     	      });
+    }
+			
+	if ($("#btn0").click() ){
+		$("#btn0").click(function(){
+			value+='0';
+			   $("#screen").html(value);
+		});
+	}
+
+
+	   if ($("#btnmul").click()){
+						     $("#btnmul").click(function(){
+						    	
+						    	if(check){
+						    	   oprator='*';
+						    		value=value+'*';
+						        $("#screen").html( value);
+						        check=false;
+						    }
+					         });
+					  }  
+		
+				if ($("#btnsub").click() ){
+						     $("#btnsub").click(function(){
+						    	if(check){
+						    		oprator='-';
+						    		value=value+'-';
+						    	check=false;
+						       $("#screen").html(  value);
+						   }
+					         });
+
+					  } 
+		
+				if ($("#btnadd").click() ){
+						     $("#btnadd").click(function(){
+						    	if(check){
+						    		oprator='+';
+						    		value=value+'+';
+						    	check=false;
+						       $("#screen").html( value);
+						   }
+					         });
+					  } 
+				if ($("#btndiv").click() ){
+						     $("#btndiv").click(function(){
+						    	if(check){
+						    		oprator='/';
+						    		value=value+'/';
+						    	check=false;
+						       $("#screen").html( value);
+						   }
+					         });
+					 
+					 }
+     			if ($("#btnC").click() ){
+						$("#btnC").click(function(){
+							value='';
+							check=true;
+						       $("#screen").html(value);
+					         });
+					  } 
+								 
+     			if ($("#btnequal").click()){
+						$("#btnequal").click(function(){
+							var num=value.indexOf(oprator);
+							var num1=value.substring(0,num);
+							var num2=value.substring(num+1,value.length);
+						    num1=Number(num1);
+						    num2=Number(num2);
+						    num1=changeBase(num1,2,10);
+						    num2=changeBase(num2,2,10);
+
+						    if (oprator=="+")
+						    	$("#screen").html(changeBase(num1+num2,10,2));
+						    else if (oprator=="-")
+						    	$("#screen").html(changeBase( num1-num2,10,2));
+						    else if (oprator=="*")
+						    	$("#screen").html(changeBase( num1*num2,10,2));
+						    else if (oprator=="/")
+						    	$("#screen").html(changeBase( num1/num2,10,2));
+
+					    });
+				 } 	
+					 		
+});
+     
+
+
+</script>
+  </body>
+</html>
