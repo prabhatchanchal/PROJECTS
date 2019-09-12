@@ -1,2 +1,3 @@
 # MINI-PROJECTS
-Repository for all mini projects 
+# project list
+* Binary project
