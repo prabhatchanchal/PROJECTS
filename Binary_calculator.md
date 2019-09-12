@@ -1,4 +1,3 @@
-##SOME SCREENSHOTS OF CALCULATOR
-
+## SOME SCREENSHOTS OF CALCULATOR
 
 ![screenshot 1](Screenshot (115).png)
