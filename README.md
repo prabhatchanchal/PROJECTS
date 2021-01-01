@@ -1,3 +1,4 @@
 # MINI-PROJECTS
 # project list
-* Binary project
+* Binary Calculator
+* Library Management
