@@ -14,9 +14,9 @@
 1. First install pygame,Tkinter
   * open CMD/Terminal
     * On Windows
-      -Enter "pip install requirements.txt"
+      - Enter "pip install requirements.txt"
     * On Linux/Unix
-      -Enter "pip3 install requirements.txt" 
+      - Enter "pip3 install requirements.txt" 
 
 
 2. Go to project folder 
