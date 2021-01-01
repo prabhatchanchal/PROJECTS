@@ -1,0 +1,4 @@
+#This file contain all necessory library 
+#to run the music player
+pygame=1.9.6
+Pillow=7.0.0
