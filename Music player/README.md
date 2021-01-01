@@ -6,8 +6,8 @@
 
 ##TKinter
 > Previously We have to manualy install
->Tkinter but now it comes preinstall 
-> with python,But it is options so
+>Tkinter but now it comes preinstalled 
+> with python,But it is optional so
 >make sure while installing python
 >check the tcl/tk option
 
