@@ -1,10 +1,13 @@
-#Atary Breakdown
+# Atary Breakdown
 ![screenshot1](Image1.jpg)
-###How to run on your local machine
-####Download the source Code
+
+### How to run on your local machine
+#### Download the source Code
+
+
 *First install pygame
 	**open CMD/Terminal
-	*On Windows
+	* On Windows
 	  ***Enter "pip install pygame"
 	*On Linux/Unix
 		***Enter "pip3 install pygame"
