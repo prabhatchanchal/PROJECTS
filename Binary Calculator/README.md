@@ -1,2 +1,0 @@
-# This is binary calculator
-
