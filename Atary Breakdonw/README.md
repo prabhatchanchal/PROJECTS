@@ -7,14 +7,17 @@
 
 *First install pygame
 
-	**open CMD/Terminal
-	* On Windows
-	  ***Enter "pip install pygame"
-	*On Linux/Unix
-		***Enter "pip3 install pygame"
+**open CMD/Terminal
+* On Windows
+ ***Enter "pip install pygame"
+*On Linux/Unix
+***Enter "pip3 install pygame"
+
+
 *Go to project folder 
-	*On windows
-	
-		**Enter "python Main.py"
-	*On Linux/Unix
-		**Enter "python3 Main.py"
+
+
+*On windows	
+**Enter "python Main.py"
+*On Linux/Unix
+**Enter "python3 Main.py"
