@@ -6,11 +6,11 @@
 
 1. First install pygame
 
-  -open CMD/Terminal
-    * On Windows
-      - Enter "pip install pygame"
-    * On Linux/Unix
-      - Enter "pip3 install pygame"
+  1.open CMD/Terminal
+      * On Windows
+         - Enter "pip install pygame"
+      * On Linux/Unix
+        - Enter "pip3 install pygame"
 
 
 2. Go to project folder 
