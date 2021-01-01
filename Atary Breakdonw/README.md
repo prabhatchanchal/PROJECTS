@@ -5,16 +5,16 @@
 #### Download the source Code
 
 
-*First install pygame
+* First install pygame
 
 ** open CMD/Terminal
 * On Windows
-*** Enter "pip install pygame"
+** Enter "pip install pygame"
 * On Linux/Unix
-*** Enter "pip3 install pygame"
+** Enter "pip3 install pygame"
 
 
-*Go to project folder 
+* Go to project folder 
 
 
 * On windows	
