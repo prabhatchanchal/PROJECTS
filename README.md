@@ -1,5 +1,5 @@
 # PROJECTS
 # project list
-* Binary Calculator here(<a href="./Binary Calculator/">)
+* Binary Calculator [here]("Binary Calculator/index.html")
 * Library Management
 
